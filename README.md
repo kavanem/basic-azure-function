@@ -1,17 +1,20 @@
 Notes on getting Azure functions running locally through vscode:
 - Setup local.settings.json file with the following contents locally
 
+```
 {
   "IsEncrypted": false,
   "Values": {    
     "AzureWebJobsStorage": "UseDevelopmentStorage=true"
   }
 }
+```
 
 
 - Install Azurite extension
 - Setup launch.json
 
+```
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -31,9 +34,11 @@ Notes on getting Azure functions running locally through vscode:
         }
     ]
 }
+```
 
 - Setup tasks.json
 
+```
 {
 	"version": "2.0.0",
 	"tasks": [
@@ -67,6 +72,7 @@ Notes on getting Azure functions running locally through vscode:
 		}		
 	]
 }
+```
 
 - Run Azurite through the command pallet ctrl+alt+P
 - Run task `Attach to .NET Functions` through the debug pane OR run `func host start`
