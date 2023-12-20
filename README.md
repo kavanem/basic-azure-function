@@ -1,4 +1,20 @@
 Notes on getting Azure functions running locally through vscode:
+- setup `settings.json` file in .vscode folder in root
+
+```
+{
+    "azureFunctions.projectSubpath": "aspnet-core\\USGCAMDatabaseConverter\\bin\\Debug\\net6.0"
+}
+```
+
+- setup `extensions.json` file
+
+```
+{
+    "azureFunctions.projectSubpath": "aspnet-core\\USGCAMDatabaseConverter\\bin\\Debug\\net6.0"
+}
+```
+
 - Setup local.settings.json file with the following contents locally
 
 ```
